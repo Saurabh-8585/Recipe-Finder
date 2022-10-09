@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu&display=swap');
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+.cont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 8rem;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.card {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 350px;
+    box-shadow: 0 3px 10px #aaa;
+}
+
+.item-name {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.border {
+    height: 250px;
+    width: 330px;
+}
+
+.img-card {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 10px;
+}
+
+.ingredients {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 10px 0;
+    border: none;
+    background-color: rgb(156, 71, 236);
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    width: 120px;
+    height: 50px;
+    text-align: center;
+}
+
+.ingredients:hover {
+    background-color: red;
+    color: white;
+}
+
+
+
+.dialogueTitle {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
