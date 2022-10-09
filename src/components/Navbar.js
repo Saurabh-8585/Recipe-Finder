@@ -18,6 +18,7 @@ const Navbar = ({ setQuery, getRecipe }) => {
                 <input
                     type="search"
                     className='search'
+                    placeholder='Enter the dish name or main ingredient'
                     onChange={(e) =>
                         setQuery(e.target.value)}
                 />
