@@ -15,6 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 60px;
   /* border: 2px solid black; */
 }
 
@@ -84,7 +85,32 @@
   }
 
   .img {
-    width: 10px;
+    height: 70px;
+    width: 70px;
     margin-right: 10px;
+    margin-top: 18px;
   }
+}
+@media (min-width:768px)and (max-width:912px){
+.navbar{
+      height: 80px;
+}
+.img {
+  width: 90px;
+  height: 100px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+}
+@media (min-width:912px)and (max-width:2000px){
+  .navbar{
+        height: 80px;
+  }
+    .img {
+      height: 110px;
+      width: 90px;
+      margin-right: 10px;
+      margin-top: 20px;
+    }
+
 }

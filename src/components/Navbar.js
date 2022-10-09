@@ -8,10 +8,10 @@ const Navbar = ({ setQuery, getRecipe }) => {
             <img
                 src={logo}
                 className="img"
-                style={{
-                    height: "80px",
-                    width: "70px"
-                }}
+                // style={{
+                //     height: "80px",
+                //     width: "70px"
+                // }}
                 alt="logo"
             />
             <div className="userSearch">
