@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Navbar from './components/Navbar';
 import './App.css'
+import searchImg from './assets/back-image.jpg';
 import RecipeCard from './components/RecipeCard';
 import axios from 'axios';
 
@@ -34,11 +35,16 @@ const App = () => {
       <Navbar onTextChange={onTextChange} />
       <div className="cont">
         {
+          recipes.length?
           recipes.map((recipe) => {
             return <RecipeCard recipe={recipe}
               recipes={recipes} />
           }
-          )}
+            ) : <img
+              src={searchImg}
+              className="searchImg"
+              alt="logo"
+            />}
       </div>
     </>
   )

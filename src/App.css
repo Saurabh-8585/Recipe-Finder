@@ -7,7 +7,7 @@
 }
 
 .navbar {
-  background-color: rgb(156, 71, 236);
+  background-color: #083AA9;
   width: 100%;
   position: fixed;
   top: 0;
@@ -15,7 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: 65px;
   /* border: 2px solid black; */
 }
 
@@ -48,10 +48,16 @@
 
 }
 
+.searchImg {
+  width: 60vw;
+  height: 80vh;
+  margin-top: 0;
+}
+
 @media (max-width:768px) {
 
   .nav-title {
-    margin: 0 10px 0 0;
+    margin: 0 0 0 0;
     font-size: 20px;
   }
 
@@ -63,64 +69,90 @@
 
 
   .img {
-    height: 70px;
-    width: 70px;
-    margin-right: 10px;
-    margin-top: 18px;
+    height: 75px;
+    width: 80px;
+  }
+
+  .searchImg {
+    width: 95vw;
+    height: 31vh;
   }
 }
 
 @media (min-width:768px)and (max-width:912px) {
   .navbar {
-    height: 80px;
+    height: 94px;
   }
 
-  .img {
-    width: 90px;
-    height: 100px;
-    margin-right: 10px;
-    margin-top: 20px;
-  }
-
-  .search {
-    font-size: 12px;
-    margin-right: 30px;
-
-  }
-}
-
-@media (min-width:912px)and (max-width:2000px) {
-  .navbar {
-    height: 80px;
+  .nav-title {
+    margin: 0 0 0 60px;
+    font-size: 30px;
   }
 
   .img {
     height: 110px;
-    width: 90px;
-    margin-right: 10px;
-    margin-top: 20px;
+    width: 130px;
+  }
+
+  .search {
+    margin-right: 30px;
+    width: 330px;
+    font-size: 15px;
+
+  }
+
+  .searchImg {
+    width: 70vw;
+    height: 35vh;
+  }
+}
+
+@media (min-width:912px) and (max-width:2000px) {
+  .navbar {
+    height: 94px;
+  }
+
+  .nav-title {
+    font-size: 36px;
+  }
+
+  .img {
+    height: 110px;
+    width: 190px;
   }
 
   .search {
     font-size: 20px;
-    text-align: center;
+    width: 460px;
+    margin-right: 100px;
+  }
+
+  .searchImg {
+    width: 55vw;
+    height: 70vh;
+
   }
 }
 
 @media (min-width:2001px) {
   .navbar {
-    height: 80px;
+    height: 95px;
   }
 
   .img {
-    height: 100px;
-    width: 90px;
-    margin-right: 10px;
-    margin-top: 20px;
+    height: 110px;
+    width: 190px;
   }
 
   .search {
     font-size: 20px;
-    text-align: center;
+    width: 460px;
+    margin-right: 100px;
+  }
+
+  .searchImg {
+    width: 55vw;
+    height: 70vh;
+
   }
 }

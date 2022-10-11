@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/logo.png'
+import logo from '../assets/chef-logo-removebg-preview.png'
 import '../App.css'
 const Navbar = ({ onTextChange }) => {
     return (
