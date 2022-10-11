@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Recipe-Finder/static/css/main.23ee10af.css",
+    "main.css": "/Recipe-Finder/static/css/main.d249d088.css",
     "main.js": "/Recipe-Finder/static/js/main.8fdc6396.js",
     "static/media/back-image.jpg": "/Recipe-Finder/static/media/back-image.7890e56b82912c9d4eb7.jpg",
     "static/media/chef-logo-removebg-preview.png": "/Recipe-Finder/static/media/chef-logo-removebg-preview.284562d8def33d0730f4.png",
     "index.html": "/Recipe-Finder/index.html",
-    "main.23ee10af.css.map": "/Recipe-Finder/static/css/main.23ee10af.css.map",
+    "main.d249d088.css.map": "/Recipe-Finder/static/css/main.d249d088.css.map",
     "main.8fdc6396.js.map": "/Recipe-Finder/static/js/main.8fdc6396.js.map"
   },
   "entrypoints": [
-    "static/css/main.23ee10af.css",
+    "static/css/main.d249d088.css",
     "static/js/main.8fdc6396.js"
   ]
 }
