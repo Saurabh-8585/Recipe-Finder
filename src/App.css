@@ -51,7 +51,7 @@
 .searchImg {
   width: 60vw;
   height: 80vh;
-  margin-top: 0;
+  margin-top: 10vh;
 }
 
 @media (max-width:768px) {
