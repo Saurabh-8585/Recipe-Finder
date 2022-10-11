@@ -5,7 +5,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 import DialogContent from '@mui/material/DialogContent';
 import DialogActions from '@mui/material/DialogActions';
 
-const RecipeCard = ({ recipe, recipes }) => {
+const RecipeCard = ({ recipe }) => {
     const [ingredients, setShowIngredients] = useState(false);
     const [details, setShowDetails] = useState(false);
     return (

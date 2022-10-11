@@ -1,15 +1,13 @@
 import React, { useState } from 'react'
-import RecipeCard from './components/RecipeCard';
+import Navbar from './components/Navbar';
 import './App.css'
+import RecipeCard from './components/RecipeCard';
 import axios from 'axios';
 
 
-
-import Navbar from './components/Navbar';
 const App = () => {
 
-  const [query, setQuery] = useState("");
-
+  const [timeOutId, setTimeOutId] = useState("");
 
   const [recipes, setRecipes] = useState([])
 
@@ -17,18 +15,23 @@ const App = () => {
 
   const API_ID = 'd1250d01';
 
-  const url = `https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_KEY}`;
-
-  async function getRecipe() {
-    const result = await axios.get(url);
+  
+  const getRecipe = async (searchString) => {
+    const result = await axios.get(`https://api.edamam.com/search?q=${searchString}&app_id=${API_ID}&app_key=${API_KEY}`);
     setRecipes(result.data.hits);
-    console.log(result);
+  }
+
+  const onTextChange = (e) => {
+    clearTimeout(timeOutId)
+    const timeOut = setTimeout(() => getRecipe(e.target.value), 500)
+    setTimeOutId(timeOut);
+
   }
 
   return (
 
     <>
-      <Navbar setQuery={setQuery} getRecipe={getRecipe} />
+      <Navbar onTextChange={onTextChange} />
       <div className="cont">
         {
           recipes.map((recipe) => {
@@ -37,7 +40,6 @@ const App = () => {
           }
           )}
       </div>
-
     </>
   )
 }
